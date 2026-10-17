@@ -77,11 +77,12 @@ try {
     const c = { calm: 36, working: 33, agents: 35, error: 31, sleeping: 90 }[state];
     line = `\x1b[${c}m${line}\x1b[0m`;
   }
-  const sig = cfg.signature;
-  if (sig && sig.enabled && sig.text) {
-    let t = sig.text;
-    if (sig.link && sig.url) t = `\x1b]8;;${sig.url}\x1b\\${t}\x1b]8;;\x1b\\`;
-    line += `  | ${t}`;
+  // Firma: un solo @ ambar que es hipervinculo OSC 8 (la firma completa vive en firma.texto y el README).
+  const fi = cfg.firma;
+  if (fi && fi.enabled && fi.url) {
+    const g = fi.glifo || '@';
+    const link = `\x1b]8;;${fi.url}\x1b\\${g}\x1b]8;;\x1b\\`;
+    line += cfg.color ? `  \x1b[38;5;214m${link}\x1b[0m` : `  ${link}`;
   }
 
   if (cfg.encadenar) {

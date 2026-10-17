@@ -47,7 +47,7 @@ Opcional: agrega `"refreshInterval": 1` dentro de `statusLine` para que la masco
 | `creature` | `gato`, `buho` o `dragon` (guino a Skyrim: "FUS RO DAH!"). Agrega la tuya en `creatures`. |
 | `lang` | `es` o `en` (mensajes en `messages`). |
 | `color` | `true`/`false`, colores ANSI. |
-| `signature` | `enabled`, `text`, `url`, `link` (enlace clicable OSC 8; solo terminales compatibles). |
+| `firma` | `enabled`, `glifo` (`@`), `texto` (la firma completa, solo informativa), `url` (destino del hipervinculo OSC 8; Ctrl/Cmd+clic en iTerm2, Kitty, WezTerm; en otros se ve solo el `@`). |
 | `encadenar` / `disposicion` | Comando de otra statusline y `misma-linea`/`linea-aparte` (ver abajo). |
 | `thresholds` | `workingSec`, `agentsSec`, `sleepSec`, `errorTailLines`, `errorWindowSec`. |
 
@@ -114,7 +114,7 @@ Optional: `"refreshInterval": 1` inside `statusLine` keeps the frames flipping w
 
 ### Configuration
 
-Edit `mascota.config.json`: `creature` (`gato` cat, `buho` owl, `dragon` with a Skyrim nod), `lang` (`es`/`en`), `color`, `signature` (turn it off with `"enabled": false`), and `thresholds`. Add your own creature under `creatures`.
+Edit `mascota.config.json`: `creature` (`gato` cat, `buho` owl, `dragon` with a Skyrim nod), `lang` (`es`/`en`), `color`, `firma` (a single amber `@` that links to `firma.url`; turn it off with `"enabled": false`), and `thresholds`. Add your own creature under `creatures`.
 
 ### Chaining another status line (claude-hud)
 
@@ -130,3 +130,7 @@ Cold start with Node is ~110-170 ms (bare `node -e 1` is ~100 ms on the test mac
 
 Idea and direction: JFC. Signature: by J.F.Carpio -jfcarpio.com- for Avatiun Consultores ([jfcarpio.com](https://jfcarpio.com), [avatiun.com](https://www.avatiun.com)). Built with Claude Code.
 License: to be defined by the author.
+
+---
+
+by J.F.Carpio -jfcarpio.com- for Avatiun Consultores

@@ -2,14 +2,14 @@
   "creature": "gato",
   "lang": "es",
   "color": true,
+  "firma": {
+    "enabled": true,
+    "glifo": "@",
+    "texto": "by J.F.Carpio -jfcarpio.com- for Avatiun Consultores",
+    "url": "https://jfcarpio.com"
+  },
   "encadenar": "",
   "disposicion": "misma-linea",
-  "signature": {
-    "enabled": true,
-    "text": "by J.F.Carpio -jfcarpio.com- for Avatiun Consultores",
-    "url": "https://jfcarpio.com",
-    "link": false
-  },
   "thresholds": {
     "workingSec": 20,
     "agentsSec": 60,
@@ -37,25 +37,70 @@
   },
   "creatures": {
     "gato": {
-      "calm":     ["=^.^=", "=^-^="],
-      "working":  ["=^o^=", "=^O^="],
-      "agents":   ["=^.^=/", "=^.^=\\"],
-      "error":    ["=;.;=", "=x.x="],
-      "sleeping": ["=-.-= z", "=-.-= Z"]
+      "calm": [
+        "=^.^=",
+        "=^-^="
+      ],
+      "working": [
+        "=^o^=",
+        "=^O^="
+      ],
+      "agents": [
+        "=^.^=/",
+        "=^.^=\\"
+      ],
+      "error": [
+        "=;.;=",
+        "=x.x="
+      ],
+      "sleeping": [
+        "=-.-= z",
+        "=-.-= Z"
+      ]
     },
     "buho": {
-      "calm":     ["{o,o}", "{-,o}"],
-      "working":  ["{O,O}", "{o,O}"],
-      "agents":   ["{o,o}/", "{o,o}\\"],
-      "error":    ["{@,@}", "{x,x}"],
-      "sleeping": ["{-,-} z", "{-,-} Z"]
+      "calm": [
+        "{o,o}",
+        "{-,o}"
+      ],
+      "working": [
+        "{O,O}",
+        "{o,O}"
+      ],
+      "agents": [
+        "{o,o}/",
+        "{o,o}\\"
+      ],
+      "error": [
+        "{@,@}",
+        "{x,x}"
+      ],
+      "sleeping": [
+        "{-,-} z",
+        "{-,-} Z"
+      ]
     },
     "dragon": {
-      "calm":     ["<o_o>~", "<o_o>~~"],
-      "working":  ["<O_O>~*", "<O_O>*~"],
-      "agents":   ["<o_o>~/", "<o_o>~\\"],
-      "error":    ["<@_@>~!", "<x_x>~!"],
-      "sleeping": ["<-_->~ z", "<-_->~ Z"],
+      "calm": [
+        "<o_o>~",
+        "<o_o>~~"
+      ],
+      "working": [
+        "<O_O>~*",
+        "<O_O>*~"
+      ],
+      "agents": [
+        "<o_o>~/",
+        "<o_o>~\\"
+      ],
+      "error": [
+        "<@_@>~!",
+        "<x_x>~!"
+      ],
+      "sleeping": [
+        "<-_->~ z",
+        "<-_->~ Z"
+      ],
       "messages": {
         "es": {
           "calm": "el dovahkiin descansa",

@@ -15,6 +15,8 @@ let fail = 0;
 const run = (json) =>
   spawnSync(process.execPath, [path.join(here, 'mascota.js')], { input: json, env, encoding: 'utf8' })
     .stdout.replace(/\x1b\[[0-9;]*m/g, '');
+const runRaw = (json) =>
+  spawnSync(process.execPath, [path.join(here, 'mascota.js')], { input: json, env, encoding: 'utf8' }).stdout;
 const touch = (f, ageSec) => { const t = new Date(Date.now() - ageSec * 1000); fs.utimesSync(f, t, t); };
 const check = (name, got, re) => {
   if (re.test(got)) console.log(`PASS ${name} -> ${got.replace(/\n/g, ' / ')}`);
@@ -45,6 +47,9 @@ try {
   stateCase('error', 5, bad, null, /fallo/);
   stateCase('zzz', 300, ok, null, /zzz/);
   stateCase('sin datos', null, null, null, /tranquila/);
+  const raw = runRaw('{}');
+  check('firma: un @ ambar con hipervinculo OSC 8', raw, /\x1b\[38;5;214m\x1b\]8;;https:\/\/jfcarpio\.com\x1b\\@\x1b\]8;;\x1b\\\x1b\[0m$/);
+  check('firma: el texto completo ya no esta en la barra', run('{}'), /^(?!.*J\.F\.Carpio)/);
   check('basura -> neutra', run('esto no es json'), /\S/);
 
   const c = JSON.parse(origCfg);
