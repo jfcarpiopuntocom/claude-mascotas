@@ -24,7 +24,7 @@ Una mascota para la barra de estado de Claude Code. Un solo script de PowerShell
 
 Prioridad: error > agentes > trabajando > zzz > tranquila. Si algo falla, imprime una mascota neutra (`=^.^=`), nunca una excepcion.
 
-### Instalacion (Windows 11, PowerShell 5.1 o 7)
+### Instalacion (Windows 11, Node.js 18+)
 
 1. Copia esta carpeta donde quieras.
 2. En tu `settings.json` de Claude Code agrega:
@@ -38,7 +38,7 @@ Prioridad: error > agentes > trabajando > zzz > tranquila. Si algo falla, imprim
 
 Opcional: agrega `"refreshInterval": 1` dentro de `statusLine` para que la mascota alterne cuadros incluso cuando la sesion esta quieta.
 
-3. Prueba: `powershell -NoProfile -ExecutionPolicy Bypass -File test-mascota.ps1`
+3. Prueba: `node test-mascota.js`
 
 ### Configuracion (`mascota.config.json`)
 
@@ -66,7 +66,7 @@ Claude Code admite UN solo comando `statusLine`, pero esa salida puede tener var
 
 ### Rendimiento
 
-El cuerpo del script tarda ~100 ms con el motor ya caliente. El arranque en frio de `powershell.exe` 5.1 es lo que domina (en la maquina de pruebas, muy cargada, superaba 2 s incluso con `-Command 1`). `pwsh` 7 arranca bastante mas rapido.
+Con Node el arranque en frio mide ~110-170 ms (el propio `node -e 1` tarda ~100 ms en la maquina de pruebas). Una alternativa en PowerShell (`mascota.ps1`, `test-mascota.ps1`) sigue incluida, pero su arranque en frio es de varios segundos en maquinas lentas.
 
 ### Creditos y licencia
 
@@ -99,7 +99,7 @@ A pet for the Claude Code status line. One dependency-free PowerShell script who
 
 Priority: error > agents > working > zzz > calm. On any failure it prints a neutral pet, never an exception.
 
-### Install (Windows 11, PowerShell 5.1 or 7)
+### Install (Windows 11, Node.js 18+)
 
 Add to your Claude Code `settings.json` (adjust the path):
 
@@ -110,7 +110,7 @@ Add to your Claude Code `settings.json` (adjust the path):
 }
 ```
 
-Optional: `"refreshInterval": 1` inside `statusLine` keeps the frames flipping while the session is idle. Run `test-mascota.ps1` to verify.
+Optional: `"refreshInterval": 1` inside `statusLine` keeps the frames flipping while the session is idle. Run `node test-mascota.js` to verify.
 
 ### Configuration
 
@@ -124,7 +124,7 @@ Claude Code accepts ONE `statusLine` command, but its output may span several li
 
 ### Performance
 
-The script body takes ~100 ms on a warm engine; cold `powershell.exe` 5.1 startup dominates. `pwsh` 7 starts faster.
+Cold start with Node is ~110-170 ms (bare `node -e 1` is ~100 ms on the test machine). A PowerShell alternative (`mascota.ps1`, `test-mascota.ps1`) is still included, but its cold start takes seconds on slow machines.
 
 ### Credits and license
 
