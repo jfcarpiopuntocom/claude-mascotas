@@ -32,7 +32,7 @@ Prioridad: error > agentes > trabajando > zzz > tranquila. Si algo falla, imprim
 ```json
 "statusLine": {
   "type": "command",
-  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\ruta\\a\\mascota-statusline\\mascota.ps1\""
+  "command": "node \"C:\\ruta\\a\\mascota-statusline\\mascota.js\""
 }
 ```
 
@@ -53,7 +53,7 @@ Opcional: agrega `"refreshInterval": 1` dentro de `statusLine` para que la masco
 
 ### Combinar con otra statusline (claude-hud)
 
-Claude Code admite UN solo comando `statusLine`, pero esa salida puede tener varias lineas. `mascota.ps1` hace de combinador: ejecuta la otra statusline, le reenvia el mismo JSON, y imprime su salida antes de la mascota. Si la otra falla o tarda mas de 1 s, se omite y solo sale la mascota.
+Claude Code admite UN solo comando `statusLine`, pero esa salida puede tener varias lineas. `mascota.js` hace de combinador: ejecuta la otra statusline, le reenvia el mismo JSON, y imprime su salida antes de la mascota. Si la otra falla o tarda mas de 1 s, se omite y solo sale la mascota.
 
 [claude-hud](https://github.com/jarrodwatts/claude-hud) (MIT, de jarrodwatts) es un plugin que se instala con `/plugin marketplace add jarrodwatts/claude-hud`, `/plugin install claude-hud` y `/claude-hud:setup`; el setup escribe su propio `statusLine` en tu `settings.json`. Para combinarlos: copia el `command` que dejo el setup, restaura el `statusLine` de la mascota (snippet de arriba) y pon ese comando en `mascota.config.json`:
 
@@ -106,7 +106,7 @@ Add to your Claude Code `settings.json` (adjust the path):
 ```json
 "statusLine": {
   "type": "command",
-  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\path\\to\\mascota-statusline\\mascota.ps1\""
+  "command": "node \"C:\\path\\to\\mascota-statusline\\mascota.js\""
 }
 ```
 
@@ -118,7 +118,7 @@ Edit `mascota.config.json`: `creature` (`gato` cat, `buho` owl, `dragon` with a 
 
 ### Chaining another status line (claude-hud)
 
-Claude Code accepts ONE `statusLine` command, but its output may span several lines. `mascota.ps1` works as a combiner: it runs the other status line, forwards the same stdin JSON, and prints its output before the pet. If it fails or takes over 1 s, it is skipped.
+Claude Code accepts ONE `statusLine` command, but its output may span several lines. `mascota.js` works as a combiner: it runs the other status line, forwards the same stdin JSON, and prints its output before the pet. If it fails or takes over 1 s, it is skipped.
 
 [claude-hud](https://github.com/jarrodwatts/claude-hud) (MIT, by jarrodwatts) installs via `/plugin marketplace add jarrodwatts/claude-hud`, `/plugin install claude-hud`, `/claude-hud:setup`; setup writes its own `statusLine` to `settings.json`. To combine: copy the `command` that setup wrote, restore mascota's `statusLine` (snippet above) and put that command in `mascota.config.json` as `"encadenar"`, with `"disposicion": "misma-linea"` or `"linea-aparte"` (own line below). It runs through `cmd /c`.
 
