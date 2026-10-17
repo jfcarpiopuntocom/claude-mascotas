@@ -1,0 +1,75 @@
+{
+  "creature": "gato",
+  "lang": "es",
+  "color": true,
+  "encadenar": "",
+  "disposicion": "misma-linea",
+  "signature": {
+    "enabled": true,
+    "text": "by J.F.Carpio -jfcarpio.com- for Avatiun Consultores",
+    "url": "https://jfcarpio.com",
+    "link": false
+  },
+  "thresholds": {
+    "workingSec": 20,
+    "agentsSec": 60,
+    "sleepSec": 120,
+    "errorTailLines": 40,
+    "errorWindowSec": 300
+  },
+  "messages": {
+    "es": {
+      "calm": "tranquila",
+      "working": "trabajando...",
+      "agents1": "1 agente trabajando",
+      "agentsN": "{n} agentes trabajando",
+      "error": "algo fallo, revisa",
+      "sleeping": "dormitando... zzz"
+    },
+    "en": {
+      "calm": "calm",
+      "working": "working...",
+      "agents1": "1 agent working",
+      "agentsN": "{n} agents working",
+      "error": "something failed, check it",
+      "sleeping": "dozing off... zzz"
+    }
+  },
+  "creatures": {
+    "gato": {
+      "calm":     ["=^.^=", "=^-^="],
+      "working":  ["=^o^=", "=^O^="],
+      "agents":   ["=^.^=/", "=^.^=\\"],
+      "error":    ["=;.;=", "=x.x="],
+      "sleeping": ["=-.-= z", "=-.-= Z"]
+    },
+    "buho": {
+      "calm":     ["{o,o}", "{-,o}"],
+      "working":  ["{O,O}", "{o,O}"],
+      "agents":   ["{o,o}/", "{o,o}\\"],
+      "error":    ["{@,@}", "{x,x}"],
+      "sleeping": ["{-,-} z", "{-,-} Z"]
+    },
+    "dragon": {
+      "calm":     ["<o_o>~", "<o_o>~~"],
+      "working":  ["<O_O>~*", "<O_O>*~"],
+      "agents":   ["<o_o>~/", "<o_o>~\\"],
+      "error":    ["<@_@>~!", "<x_x>~!"],
+      "sleeping": ["<-_->~ z", "<-_->~ Z"],
+      "messages": {
+        "es": {
+          "calm": "el dovahkiin descansa",
+          "working": "forjando un grito...",
+          "error": "FUS RO DAH! algo fallo",
+          "sleeping": "hibernando... zzz"
+        },
+        "en": {
+          "calm": "the dragonborn rests",
+          "working": "forging a shout...",
+          "error": "FUS RO DAH! something failed",
+          "sleeping": "hibernating... zzz"
+        }
+      }
+    }
+  }
+}
