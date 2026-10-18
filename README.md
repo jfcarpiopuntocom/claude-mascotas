@@ -74,7 +74,7 @@ Un interruptor, una sola vez: `/plugin` → **Marketplaces** → `claude-mascota
 
 ### 🤝 ¿Ya tenías otra statusLine?
 
-`/mascotas:setup` la conserva (claude-hud, ccstatusline, la tuya…) y mete a la mascota como **una** línea justo debajo de la del modelo. Guarda un respaldo de tu `settings.json` la primera vez y nunca lo pisa. Si tu statusLine tarda más de 1,5 s, la mascota sale sola en ese momento en vez de congelarse.
+`/mascotas:setup` la conserva (claude-hud, ccstatusline, la tuya…) y mete a la mascota como **una** línea justo debajo de la del modelo. Guarda un respaldo de tu `settings.json` la primera vez y nunca lo pisa. Si tu statusLine tarda más de 4 s, la mascota sale sola en ese momento en vez de congelarse (ajustable con `chainTimeoutMs`).
 
 ### 👋 Desinstalar
 
@@ -151,10 +151,9 @@ Opcional. Crea `~/.claude/plugins/claude-mascotas/config.json` (o dentro de tu `
 | `color` | colores por estado | `true` |
 | `maxAgents` | agentes visibles antes de `+n` | `4` |
 | `maxWidth` | ancho máximo si tu terminal no lo informa | `100` |
-| `signature.enabled` | el `@` | `true` |
 | `chain` | tu statusLine anterior, que se conserva | lo pone `setup` |
+| `chainTimeoutMs` | cuánto esperar a tu statusLine anterior | `4000` |
 
-**¿Y ese `@` naranja?** Es la firma del autor: un enlace diminuto a su web. Si no lo quieres: `{ "signature": { "enabled": false } }`.
 
 ## 🧠 Cómo funciona
 
