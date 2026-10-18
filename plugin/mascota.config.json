@@ -9,13 +9,13 @@
     "url": "https://jfcarpio.com"
   },
   "encadenar": "",
-  "disposicion": "misma-linea",
   "thresholds": {
     "workingSec": 20,
     "agentsSec": 60,
     "sleepSec": 120,
     "errorTailLines": 40,
-    "errorWindowSec": 300
+    "errorWindowSec": 300,
+    "agentWindowSec": 1800
   },
   "messages": {
     "es": {
@@ -79,42 +79,7 @@
         "{-,-} z",
         "{-,-} Z"
       ]
-    },
-    "dragon": {
-      "calm": [
-        "<o_o>~",
-        "<o_o>~~"
-      ],
-      "working": [
-        "<O_O>~*",
-        "<O_O>*~"
-      ],
-      "agents": [
-        "<o_o>~/",
-        "<o_o>~\\"
-      ],
-      "error": [
-        "<@_@>~!",
-        "<x_x>~!"
-      ],
-      "sleeping": [
-        "<-_->~ z",
-        "<-_->~ Z"
-      ],
-      "messages": {
-        "es": {
-          "calm": "el dovahkiin descansa",
-          "working": "forjando un grito...",
-          "error": "FUS RO DAH! algo fallo",
-          "sleeping": "hibernando... zzz"
-        },
-        "en": {
-          "calm": "the dragonborn rests",
-          "working": "forging a shout...",
-          "error": "FUS RO DAH! something failed",
-          "sleeping": "hibernating... zzz"
-        }
-      }
     }
-  }
+  },
+  "maxAgentes": 4
 }
