@@ -1,6 +1,16 @@
 # Cambios
 
 ## 2.2.1 (18 oct 2026)
+- `setup` conserva la statusLine que encadenaba una copia local de mascota-statusline.
+
+## 2.2.0
+- `/mascota`: sin nada lista las 24 numeradas; `/mascota 22` por número, `/mascota pulpo` por nombre, `/mascota azar`.
+- Galería a color (los mismos colores de la terminal) y numerada.
+
+## 2.1.1
+- Sin `@` en la línea. Espera configurable a tu statusLine anterior (`chainTimeoutMs`, 4 s).
+
+## 2.1.0
 - Se mueve de verdad: `setup` pide redibujar cada segundo (`refreshInterval: 1`).
 - Recuerda a tu equipo de agentes aunque la sesión sea larguísima.
 - Solo se preocupa si la última herramienta falló; con agentes trabajando, manda el equipo.
