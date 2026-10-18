@@ -27,7 +27,7 @@ const previo = settings.statusLine && settings.statusLine.command;
 
 let cfg = {};
 try { cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8')); } catch (e) {}
-if (previo && !previo.includes('mascota')) cfg.encadenar = previo;
+if (previo && !/mascota|claude-pets/.test(previo)) cfg.encadenar = previo;
 fs.writeFileSync(cfgPath, JSON.stringify(cfg, null, 2));
 
 settings.statusLine = { type: 'command', command: nuestro, padding: 0 };

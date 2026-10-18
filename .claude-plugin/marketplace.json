@@ -1,12 +1,12 @@
 {
   "name": "mascota",
   "owner": { "name": "J.F.Carpio", "url": "https://jfcarpio.com" },
-  "metadata": { "description": "Un gatito ASCII en la statusLine de Claude Code. Una sola línea. Nada más.", "version": "1.0.0" },
+  "metadata": { "description": "Una gatita ASCII en la statusLine de Claude Code. Una sola línea. Nada más.", "version": "1.0.1" },
   "plugins": [
     {
       "name": "mascota",
       "source": "./plugin",
-      "description": "Gatito ASCII de una sola línea en la statusLine: tranquila, trabajando, dormitando, error, y un gatito por cada agente de tu equipo con su nombre real.",
+      "description": "Gatita ASCII de una sola línea en la statusLine: tranquila, trabajando, dormitando, error, y un gatito por cada agente de tu equipo con su nombre real.",
       "category": "fun",
       "tags": ["statusline", "ascii", "cat", "gato", "agents", "fun"]
     }

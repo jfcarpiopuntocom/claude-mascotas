@@ -1,7 +1,7 @@
 {
   "name": "mascota",
-  "description": "Gatito ASCII de una sola línea en la statusLine de Claude Code, con un gatito por cada agente que trabaja.",
-  "version": "1.0.0",
+  "description": "Gatita ASCII de una sola línea en la statusLine de Claude Code, con un gatito por cada agente que trabaja.",
+  "version": "1.0.1",
   "author": { "name": "J.F.Carpio", "url": "https://jfcarpio.com" },
   "homepage": "https://github.com/jfcarpiopuntocom/mascota-statusline",
   "repository": "https://github.com/jfcarpiopuntocom/mascota-statusline",
