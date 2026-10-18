@@ -4,7 +4,7 @@
 
 # claude-mascotas
 
-**Una gatita ASCII que te hace compañía en la statusLine de Claude Code.**<br>
+**24 mascotas ASCII que te hacen compañía en la statusLine de Claude Code.**<br>
 Ocupa **una sola línea**. Siempre. Por diseño. Y cuando trabaja tu equipo de agentes, cada uno sale a su lado con su nombre real.
 
   <a href="https://github.com/jfcarpiopuntocom/claude-mascotas/actions/workflows/test.yml"><img src="https://github.com/jfcarpiopuntocom/claude-mascotas/actions/workflows/test.yml/badge.svg" alt="tests"></a>
@@ -26,7 +26,7 @@ Una mascota ASCII que vive en la statusLine de [Claude Code](https://code.claude
 
 <p align="center"><img src="assets/demo.gif" alt="La gatita en la statusLine: ronronea, trabaja, acompaña a 3 agentes con sus nombres, se preocupa y se duerme" width="816"></p>
 
-| Cuando… | La gatita |
+| Cuando… | La gata (viene por defecto) |
 |---|---|
 | no pasa nada | `=^.^= ronroneando` |
 | Claude está trabajando | `=^o^= trabajando...` |
@@ -47,7 +47,7 @@ Dentro de Claude Code:
 /mascotas:setup
 ```
 
-Saluda a tu gatita.
+Saluda a tu mascota: viene la gata, y tienes 24 para elegir con `/mascota`.
 
 <details>
 <summary><b>¿Prefieres la terminal?</b></summary>
@@ -90,45 +90,54 @@ Un interruptor, una sola vez: `/plugin` → **Marketplaces** → `claude-mascota
 
 24 para empezar. Esto es solo el principio.
 
-<p align="center"><img src="assets/desfile.gif" alt="Desfile de mascotas: perro, búho, pulpo, gatito otaku, cangrejo, robot, rana, erizo, dragón y pingüino, cada una con su frase" width="816"></p>
 
 <!-- galeria:start -->
-| Mascota | En calma | Trabajando | Algo falló | Durmiendo | Clave |
-|---|---|---|---|---|---|
-| **Gata** | `=^.^=` <sub>ronroneando</sub> | `=^o^=` | `=;.;=` | `=-.-= Zzz` | `gata` |
-| **Perro** | `U(^w^)U` <sub>¡guau! aquí estoy</sub> | `U(*w*)U!` | `U(;w;)U` | `U(-w-)U Zzz` | `perro` |
-| **Búho** | `{^,^}` <sub>uhh-uhh...</sub> | `{O,O}` | `{@,@}` | `{-,-} Zzz` | `buho` |
-| **Dragón** | `<^.^>~` <sub>cuidando el tesoro</sub> | `<^O^>==*` | `<@.@>~` | `<-.->~ Zzz` | `dragon` |
-| **Conejo** | `(\^x^/)` <sub>oreja atenta</sub> | `(\OxO/)` | `(\;x;/)` | `(\-x-/) Zzz` | `conejo` |
-| **Pingüino** | `<(^v^)>` <sub>de frac y listo</sub> | `<(OvO)>` | `<(;v;)>` | `<(-v-)> Zzz` | `pinguino` |
-| **Pez** | `><(((^>` <sub>blub, nadando...</sub> | `><(((*> o` | `><(((x>` | `><(((-> Zzz` | `pez` |
-| **Pulpo** | `~{^o^}~` <sub>ocho brazos libres</sub> | `~{>o<}~~` | `~{x_x}~ :::` | `~{-o-}~ Zzz` | `pulpo` |
-| **Ratón** | `<:3 )~` <sub>squik, ¿queso?</sub> | `<:3 )~ ==` | `<;3 )~` | `<-3 )~ Zzz` | `raton` |
-| **Cerdo** | `(^oo^)` <sub>oink, todo bien</sub> | `(>OO<)` | `(TooT)` | `(-oo-) Zzz` | `cerdo` |
-| **Rana** | `(o)__(o)` <sub>croac, tranquila</sub> | `(o)__(o)-----*` | `(;)__(;)` | `(-)__(-) Zzz` | `rana` |
-| **Robot** | `[^_^]` <sub>bip bup, en línea</sub> | `[0_1]` | `[x_x]~` | `[-_-] Zzz` | `robot` |
-| **Gatito otaku** | `(=^w^=)` <sub>nyaa~</sub> | `(=>w<=)` | `(=XwX=)` | `(=-w-=) Zzz` | `otaku` |
-| **Mono** | `@('_')@` <sub>uh-uh, ¿banana?</sub> | `@(*o*)@` | `@(;_;)@` | `@(-_-)@ Zzz` | `mono` |
-| **Oso** | `c(^(I)^)c` <sub>abrazo de oso</sub> | `c(*(I)*)c` | `c(T(I)T)c` | `c(-(I)-)c Zzz` | `oso` |
-| **Pajarito** | `(^>` <sub>pío pío~</sub> | `\(o>` | `(x>` | `(-> Zzz` | `pajarito` |
-| **Pato** | `__(.)<` <sub>cuac, flotando</sub> | `~__(o)<` | `__(x)<` | `__(-)< Zzz` | `pato` |
-| **Cangrejo** | `(\/)(^,,^)(\/)` <sub>clac clac, de lado</sub> | `(\/)(O,,O)(\/)` | `(\/)(;,,;)(\/)` | `(V)(-,,-)(V) Zzz` | `cangrejo` |
-| **Murciélago** | `/\(^.^)/\` <sub>volando de noche</sub> | `/\(>.<)/\` | `/\(x.x)/\` | `\/(-.-)\/ Zzz` | `murcielago` |
-| **Araña** | `/\/(^^^^)\/\` <sub>en su telaraña</sub> | `/\/(OOOO)\/\` | `/\/(xxxx)\/\` | `/\/(----)\/\ Zzz` | `arana` |
-| **Oruga** | `oOoO('u')` <sub>ñam, una hojita</sub> | `oOoO(OuO)` | `oooo(;u;)` | `oooo(-u-) Zzz` | `oruga` |
-| **Serpiente** | `~~~~:>` <sub>sss, al sol</sub> | `~/\/\/:>` | `~~~~x>` | `@@~-> Zzz` | `serpiente` |
-| **Fantasma** | `~~(O.O)` <sub>flotando, uuuh</sub> | `~~(OoO) boo!` | `~~(x.x)` | `~~(-.-) Zzz` | `fantasma` |
-| **Erizo** | `MMMM(^.^)` <sub>husmeando, snif</sub> | `MMMM(>.<)` | `MMMM(;.;)` | `MMMM(-.-) Zzz` | `erizo` |
+<p align="center"><img src="assets/gallery.svg" alt="Galería de mascotas en sus cinco estados, con los colores de la terminal" width="100%"></p>
+
+<details>
+<summary><b>Ver la galería en texto (para copiar los nombres)</b></summary>
+
+| # | Mascota | En calma | Trabajando | Algo falló | Durmiendo | Clave |
+|---|---|---|---|---|---|---|
+| 1 | **Gata** | `=^.^=` <sub>ronroneando</sub> | `=^o^=` | `=;.;=` | `=-.-= Zzz` | `gata` |
+| 2 | **Perro** | `U(^w^)U` <sub>¡guau! aquí estoy</sub> | `U(*w*)U!` | `U(;w;)U` | `U(-w-)U Zzz` | `perro` |
+| 3 | **Búho** | `{^,^}` <sub>uhh-uhh...</sub> | `{O,O}` | `{@,@}` | `{-,-} Zzz` | `buho` |
+| 4 | **Dragón** | `<^.^>~` <sub>cuidando el tesoro</sub> | `<^O^>==*` | `<@.@>~` | `<-.->~ Zzz` | `dragon` |
+| 5 | **Conejo** | `(\^x^/)` <sub>oreja atenta</sub> | `(\OxO/)` | `(\;x;/)` | `(\-x-/) Zzz` | `conejo` |
+| 6 | **Pingüino** | `<(^v^)>` <sub>de frac y listo</sub> | `<(OvO)>` | `<(;v;)>` | `<(-v-)> Zzz` | `pinguino` |
+| 7 | **Pez** | `><(((^>` <sub>blub, nadando...</sub> | `><(((*> o` | `><(((x>` | `><(((-> Zzz` | `pez` |
+| 8 | **Pulpo** | `~{^o^}~` <sub>ocho brazos libres</sub> | `~{>o<}~~` | `~{x_x}~ :::` | `~{-o-}~ Zzz` | `pulpo` |
+| 9 | **Ratón** | `<:3 )~` <sub>squik, ¿queso?</sub> | `<:3 )~ ==` | `<;3 )~` | `<-3 )~ Zzz` | `raton` |
+| 10 | **Cerdo** | `(^oo^)` <sub>oink, todo bien</sub> | `(>OO<)` | `(TooT)` | `(-oo-) Zzz` | `cerdo` |
+| 11 | **Rana** | `(o)__(o)` <sub>croac, tranquila</sub> | `(o)__(o)-----*` | `(;)__(;)` | `(-)__(-) Zzz` | `rana` |
+| 12 | **Robot** | `[^_^]` <sub>bip bup, en línea</sub> | `[0_1]` | `[x_x]~` | `[-_-] Zzz` | `robot` |
+| 13 | **Gatito otaku** | `(=^w^=)` <sub>nyaa~</sub> | `(=>w<=)` | `(=XwX=)` | `(=-w-=) Zzz` | `otaku` |
+| 14 | **Mono** | `@('_')@` <sub>uh-uh, ¿banana?</sub> | `@(*o*)@` | `@(;_;)@` | `@(-_-)@ Zzz` | `mono` |
+| 15 | **Oso** | `c(^(I)^)c` <sub>abrazo de oso</sub> | `c(*(I)*)c` | `c(T(I)T)c` | `c(-(I)-)c Zzz` | `oso` |
+| 16 | **Pajarito** | `(^>` <sub>pío pío~</sub> | `\(o>` | `(x>` | `(-> Zzz` | `pajarito` |
+| 17 | **Pato** | `__(.)<` <sub>cuac, flotando</sub> | `~__(o)<` | `__(x)<` | `__(-)< Zzz` | `pato` |
+| 18 | **Cangrejo** | `(\/)(^,,^)(\/)` <sub>clac clac, de lado</sub> | `(\/)(O,,O)(\/)` | `(\/)(;,,;)(\/)` | `(V)(-,,-)(V) Zzz` | `cangrejo` |
+| 19 | **Murciélago** | `/\(^.^)/\` <sub>volando de noche</sub> | `/\(>.<)/\` | `/\(x.x)/\` | `\/(-.-)\/ Zzz` | `murcielago` |
+| 20 | **Araña** | `/\/(^^^^)\/\` <sub>en su telaraña</sub> | `/\/(OOOO)\/\` | `/\/(xxxx)\/\` | `/\/(----)\/\ Zzz` | `arana` |
+| 21 | **Oruga** | `oOoO('u')` <sub>ñam, una hojita</sub> | `oOoO(OuO)` | `oooo(;u;)` | `oooo(-u-) Zzz` | `oruga` |
+| 22 | **Serpiente** | `~~~~:>` <sub>sss, al sol</sub> | `~/\/\/:>` | `~~~~x>` | `@@~-> Zzz` | `serpiente` |
+| 23 | **Fantasma** | `~~(O.O)` <sub>flotando, uuuh</sub> | `~~(OoO) boo!` | `~~(x.x)` | `~~(-.-) Zzz` | `fantasma` |
+| 24 | **Erizo** | `MMMM(^.^)` <sub>husmeando, snif</sub> | `MMMM(>.<)` | `MMMM(;.;)` | `MMMM(-.-) Zzz` | `erizo` |
+
+</details>
 <!-- galeria:end -->
 
 <a id="elegir"></a>
 ## 🎲 Elegir mascota
 
 ```
-/mascotas:elegir              # muestra todas
-/mascotas:elegir pulpo        # elige una (con o sin tildes: búho, buho)
-/mascotas:elegir azar         # que decida el destino
+/mascota            # lista las 24, numeradas
+/mascota 22         # por número (1 a 24)
+/mascota pulpo      # por nombre (con o sin tildes: búho, buho)
+/mascota azar       # que decida el destino
 ```
+
+Para probarlas todas: `/mascota 1`, `/mascota 2`… hasta `/mascota 24`. Si otro plugin ya usa `/mascota`, escribe `/mascotas:mascota`.
 
 Tu equipo de agentes sale con la misma especie: si eliges pulpo, tu estratega es un pulpo. Como debe ser.
 
@@ -172,7 +181,7 @@ Sin dependencias, sin red, sin telemetría. Lee solo lo que se agregó al transc
 
 - [x] Gatita de una sola línea
 - [x] Un animalito por agente, con su nombre real
-- [x] 24 mascotas y `/mascotas:elegir`
+- [x] 24 mascotas: `/mascota 22`, `/mascota pulpo`, `/mascota azar`
 - [x] Actualizaciones automáticas
 - [ ] Docenas más (¿cuál falta? [pídela](https://github.com/jfcarpiopuntocom/claude-mascotas/issues/new?template=nueva-mascota.yml))
 - [ ] Mascotas de temporada
