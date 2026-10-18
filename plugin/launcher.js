@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Ejecuta la versión más nueva instalada de la mascota. /mascota:setup copia este archivo a
-// <config>/plugins/mascota/ para que la statusLine siga funcionando cuando el plugin se actualiza.
+// Runs the newest installed version of claude-mascotas. /mascotas:setup copies this file to
+// <config>/plugins/claude-mascotas/ so your statusLine keeps working every time the plugin updates.
 'use strict';
 const fs = require('fs');
 const os = require('os');
@@ -11,8 +11,8 @@ const cache = path.join(env ? env.replace(/^~(?=$|[\\/])/, os.homedir()) : path.
 const ls = (d) => { try { return fs.readdirSync(d); } catch (e) { return []; } };
 const ver = (n) => (/^(\d+)\.(\d+)\.(\d+)/.exec(n) || []).slice(1).map(Number);
 let best = null;
-for (const m of ls(cache)) for (const v of ls(path.join(cache, m, 'mascota'))) {
-  const f = path.join(cache, m, 'mascota', v, 'mascota.js'), x = ver(v);
+for (const m of ls(cache)) for (const v of ls(path.join(cache, m, 'mascotas'))) {
+  const f = path.join(cache, m, 'mascotas', v, 'mascota.js'), x = ver(v);
   if (x.length && fs.existsSync(f) && (!best || x[0] - best.x[0] || x[1] - best.x[1] || x[2] - best.x[2]) > 0) best = { x, f };
 }
-if (best) require(best.f); else process.stdout.write('=^.^= (reinstala: /plugin install mascota@mascota)');
+if (best) require(best.f); else process.stdout.write('=^.^= (reinstala: /plugin install mascotas@claude-mascotas)');

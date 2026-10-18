@@ -1,0 +1,18 @@
+name: Nueva mascota
+description: Pide un animalito nuevo (o dibújalo tú)
+title: "Nueva mascota: "
+labels: ["nueva mascota"]
+body:
+  - type: input
+    id: nombre
+    attributes: { label: "¿Qué animal?", placeholder: "Capibara" }
+    validations: { required: true }
+  - type: textarea
+    id: dibujo
+    attributes:
+      label: "Su cara en ASCII (opcional)"
+      description: "Una sola línea, máximo 20 caracteres. Si no sabes, lo dibujamos nosotros."
+      placeholder: "tranquila: (o..o)  trabajando: (O..O)  error: (x..x)  durmiendo: (-..-) z"
+  - type: textarea
+    id: porque
+    attributes: { label: "¿Por qué la necesita el mundo?" }
