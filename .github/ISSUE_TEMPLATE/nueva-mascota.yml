@@ -11,8 +11,8 @@ body:
     id: dibujo
     attributes:
       label: "Su cara en ASCII (opcional)"
-      description: "Una sola línea, máximo 20 caracteres. Si no sabes, lo dibujamos nosotros."
-      placeholder: "tranquila: (o..o)  trabajando: (O..O)  error: (x..x)  durmiendo: (-..-) z"
+      description: "Una sola línea, máximo 20 caracteres. Si no sabes, la dibujamos nosotros."
+      placeholder: "en calma: (o..o)  trabajando: (O..O)  error: (x..x)  durmiendo: (-..-) Zzz"
   - type: textarea
     id: porque
     attributes: { label: "¿Por qué la necesita el mundo?" }

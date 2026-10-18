@@ -5,14 +5,14 @@
     "url": "https://jfcarpio.com"
   },
   "metadata": {
-    "description": "Mascotas ASCII de una sola línea para la statusLine de Claude Code. Un animalito por cada agente de tu equipo.",
-    "version": "2.0.0"
+    "description": "Mascotas ASCII de una sola línea para la statusLine de Claude Code. Tu equipo de agentes sale a su lado, cada uno con su nombre.",
+    "version": "2.1.0"
   },
   "plugins": [
     {
       "name": "mascotas",
       "source": "./plugin",
-      "description": "Mascotas ASCII de una sola línea para la statusLine de Claude Code. Un animalito por cada agente de tu equipo.",
+      "description": "Mascotas ASCII de una sola línea para la statusLine de Claude Code. Tu equipo de agentes sale a su lado, cada uno con su nombre.",
       "category": "fun",
       "tags": [
         "statusline",

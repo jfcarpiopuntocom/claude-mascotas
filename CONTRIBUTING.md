@@ -13,11 +13,12 @@
      "working":  ["(O..O)", "(o..O)"],
      "agents":   ["(o..o)/", "(o..o)\\"],
      "error":    ["(x..x)", "(;..;)"],
-     "sleeping": ["(-..-) z", "(-..-) Z"]
+     "sleeping": ["(-..-) Zzz", "(-..-) zZz"],
+     "messages": { "es": { "calm": "chill total" }, "en": { "calm": "totally chill" } }
    }
    ```
 
-   Reglas: 2 cuadros por estado, **solo ASCII**, máximo 20 caracteres. Una sola línea, siempre.
+   Reglas: 2 cuadros por estado (se alternan cada segundo: que parpadee, mueva la cola, aletee), **solo ASCII**, máximo 20 caracteres, sin `|`. `messages` es opcional. Una sola línea, siempre.
 2. `node scripts/galeria.js` para actualizar la galería del README.
 3. `node plugin/test.js` tiene que decir `PASS`.
 4. Sube `version` en `plugin/.claude-plugin/plugin.json` y en `.claude-plugin/marketplace.json`.
