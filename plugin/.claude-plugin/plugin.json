@@ -1,7 +1,7 @@
 {
   "name": "mascotas",
   "description": "Mascotas ASCII de una sola línea para la statusLine de Claude Code. Tu equipo de agentes sale a su lado, cada uno con su nombre.",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "author": {
     "name": "J.F.Carpio",
     "url": "https://jfcarpio.com"

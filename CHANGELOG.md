@@ -1,6 +1,6 @@
 # Cambios
 
-## 2.1.1 (18 oct 2026)
+## 2.2.1 (18 oct 2026)
 - Se mueve de verdad: `setup` pide redibujar cada segundo (`refreshInterval: 1`).
 - Recuerda a tu equipo de agentes aunque la sesión sea larguísima.
 - Solo se preocupa si la última herramienta falló; con agentes trabajando, manda el equipo.
